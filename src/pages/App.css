@@ -24,9 +24,22 @@
 div{
   box-sizing: border-box;
 }
+#logo{
+  text-align: center;
+}
 .list{
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+#left{
+  margin: auto;
+}
+#center{
+  margin: auto;
+}
+#right{
+  margin: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
