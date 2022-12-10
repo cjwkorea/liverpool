@@ -38,7 +38,8 @@ const Member = () => {
               Home
             </button>
             <button onClick={() => Navigate("/Member")}>Member</button>
-            <Nav.Link href="#pricing">History</Nav.Link>
+            <button onClick={() => Navigate("/History")}>History</button>
+            
           </Nav>
         </Container>
       </Navbar>

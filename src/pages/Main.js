@@ -17,7 +17,8 @@ const Main = () => {
         <Nav className="me-auto">
         <button onClick={() => window.open('https://www.liverpoolfc.com', '_blank')}>Home</button>
           <button onClick={() => Navigate("/Member")}>Member</button>
-          <Nav.Link href="#pricing">History</Nav.Link>
+          <button onClick={() => Navigate("/History")}>History</button>
+         
         </Nav>
       </Container>
     </Navbar>

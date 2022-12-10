@@ -41,6 +41,12 @@ div{
 #right{
   margin: auto;
 }
+.img {
+  width: 80%;
+  height: 1000px;
+  margin: auto;
+  display: block;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
