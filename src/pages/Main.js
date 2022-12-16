@@ -1,5 +1,5 @@
 import React from "react";
-import { Card,} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -11,21 +11,21 @@ import List from "./List";
 const Main = () => {
   return (
     <div className="App">
-      <Top/>
+      <Top />
       <Card className="bg-dark text-white">
         <Card.Img
           variant="top"
           src="./img/img.png"
           style={{ width: "10rem", margin: "auto" }}
         />
-         <Card.Body>
+        <Card.Body>
           <Card.Text>
-            <h1>Welcome ⚽ LiverPool</h1>
+            <h1 style={{ color: "red" }}>Welcome ⚽ LiverPool</h1>
           </Card.Text>
         </Card.Body>
       </Card>
-      <List/>
-      <Cup/>
+      <List />
+      <Cup />
       <Card.Img
         variant="top"
         src="./img/캡처1.PNG"
@@ -37,7 +37,7 @@ const Main = () => {
         style={{ width: "120rem", margin: "auto" }}
       />
 
-      <Log/>
+      <Log />
     </div>
   );
 };

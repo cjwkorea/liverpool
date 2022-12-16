@@ -8,11 +8,14 @@ const Top= () => {
     <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
-            <h1 onClick={() => Navigate("/")}>LFC</h1>
+            <h1
+            style={{color:"red"}}
+            onClick={() => Navigate("/")}>LFC</h1>
           </Navbar.Brand>
           <Nav className="me-auto">
             <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() =>
                 window.open("https://www.liverpoolfc.com", "_blank")
               }
@@ -20,32 +23,37 @@ const Top= () => {
               Home
             </button>
             <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() => Navigate("/Member")}
             >
               Member
             </button>
             <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() => Navigate("/History")}
             >
               History
             </button>
             <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() => Navigate("/Write")}
             >
               글 작성
             </button>
           </Nav>
           <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() => Navigate("/Login")}
             >
               로그인
             </button>
             <button
-              className="bg-danger text-white"
+              className="rounded-pill"
+              style={{backgroundColor:"darkgray"}}
               onClick={() => Navigate("/Register")}
             >
               회원가입
