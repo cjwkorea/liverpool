@@ -6,19 +6,19 @@ const Log = () => {
     <Card>
     <div>
       <a href="https://www.facebook.com/LiverpoolFC">
-        <img src="./img/icons8-facebook-new.svg"></img>
+        <img src="./img/icons8-facebook-new.svg" title='facebook'></img>
       </a>
       <a href="https://www.tiktok.com/@liverpoolfc">
-        <img src="./img/icons8-tik의-톡.svg"></img>
+        <img src="./img/icons8-tik의-톡.svg" title='tiktok'></img>
       </a>
       <a href="http://instagram.com/liverpoolfc/">
-        <img src="./img/icons8-인스-타-그램.svg"></img>
+        <img src="./img/icons8-인스-타-그램.svg" title='instagram'></img>
       </a>
       <a href="https://twitter.com/lfc">
-        <img src="./img/icons8-twitter-서클.svg"></img>
+        <img src="./img/icons8-twitter-서클.svg" title='twitter'></img>
       </a>
       <a href="http://www.youtube.com/liverpoolfc?sub_confirmation=1">
-        <img src="./img/icons8-유튜브-재생.svg"></img>
+        <img src="./img/icons8-유튜브-재생.svg" title='youtube'></img>
       </a>
     </div>
   </Card>

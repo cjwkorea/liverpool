@@ -1,10 +1,9 @@
-import React from "react";
-import { Card, Container, Nav, Navbar } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { Card } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
 import "./App.css";
-import { useNavigate } from "react-router-dom";
 import Top from "./Top";
 
 const History = () => {

@@ -8,7 +8,7 @@ const List = () => {
         <Col>
           <Card>
             <Card.Img variant="top" src="./img/no-image.png" 
-             style={{ width: "450px", margin: "auto" }}/>
+             style={{ width: "294px", margin: "auto" }}/>
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>

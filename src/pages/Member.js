@@ -39,6 +39,7 @@ const Member = () => {
                 {이름[0]}
 
                 <div
+                title="영문 변환"
                   onClick={() => {
                     const copy = [...이름];
                     copy[0] = "Roberto Firmino";
@@ -52,6 +53,7 @@ const Member = () => {
                 <p>{position[1]}</p>
               </Card.Text>
               <div
+              title="선수 정보"
                 onClick={() =>
                   window.open(
                     "https://namu.wiki/w/%ED%98%B8%EB%B2%A0%EB%A5%B4%ED%88%AC%20%ED%94%BC%EB%A5%B4%EB%AF%B8%EB%88%84",
@@ -76,6 +78,7 @@ const Member = () => {
                 {이름[1]}
 
                 <div
+                 title="영문 변환"
                   onClick={() => {
                     const copy = [...이름];
                     copy[1] = "Mohamed Salah";
@@ -90,6 +93,7 @@ const Member = () => {
                 <p>{position[0]}</p>
               </Card.Text>
               <div
+              title="선수 정보"
                 onClick={() =>
                   window.open(
                     "https://namu.wiki/w/%EB%AA%A8%ED%95%98%EB%A9%94%EB%93%9C%20%EC%82%B4%EB%9D%BC",
@@ -114,6 +118,7 @@ const Member = () => {
                 {이름[2]}
 
                 <div
+                 title="영문 변환"
                   onClick={() => {
                     const copy = [...이름];
                     copy[2] = "Luis Diaz";
@@ -128,6 +133,7 @@ const Member = () => {
                 <p>{position[2]}</p>
               </Card.Text>
               <div
+              title="선수 정보"
                 onClick={() =>
                   window.open(
                     "https://namu.wiki/w/%EB%A3%A8%EC%9D%B4%EC%8A%A4%20%EB%94%94%EC%95%84%EC%8A%A4",
