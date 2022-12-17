@@ -2,10 +2,10 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "../styles/App.css";
 import Cup from "./Cup";
-import Log from "./Log";
-import Top from "./Top";
+import Log from "../commons/Log";
+import Top from "../commons/Top";
 import List from "./List";
 
 const Main = () => {

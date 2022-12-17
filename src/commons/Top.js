@@ -1,9 +1,12 @@
-import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+
 
 const Top= () => {
   const Navigate = useNavigate();
+  
+  
   return (
     <Navbar bg="dark" variant="dark">
         <Container>
@@ -58,6 +61,7 @@ const Top= () => {
             >
               회원가입
             </button>
+            
         </Container>
       </Navbar>
   )

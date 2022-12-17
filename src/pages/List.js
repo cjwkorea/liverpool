@@ -8,13 +8,11 @@ const List = () => {
         <Col>
           <Card>
             <Card.Img variant="top" src="./img/no-image.png" 
-             style={{ width: "294px", margin: "auto" }}/>
+             style={{ width: "100%", margin: "auto" }}/>
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>글</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+               글 작성하면 여기에 올라옴
               </Card.Text>
             </Card.Body>
           </Card>
