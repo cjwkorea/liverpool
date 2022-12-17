@@ -8,6 +8,8 @@ import Log from "../commons/Log";
 import Top from "../commons/Top";
 import List from "./List";
 
+
+
 const Main = () => {
   return (
     <div className="App">
@@ -24,7 +26,7 @@ const Main = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <List />
+      <List/>
       <Cup />
       <Card.Img
         variant="top"

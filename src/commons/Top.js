@@ -1,17 +1,15 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
-
+import React from 'react'
+import { Container, Nav, Navbar } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 const Top= () => {
   const Navigate = useNavigate();
-  
-  
   return (
     <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
             <h1
+            type="button"
             style={{color:"red"}}
             onClick={() => Navigate("/")}>LFC</h1>
           </Navbar.Brand>

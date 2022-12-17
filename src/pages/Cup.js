@@ -6,6 +6,7 @@ const Cup = () => {
     <Card className="bg-secondary text-white">
     <div>
       <img
+       
         alt="Legue Title"
         title="Legue Title 🏆 19회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/league_title.svg"
