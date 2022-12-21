@@ -1,11 +1,11 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Image } from 'react-bootstrap'
 
 const Cup = () => {
   return (
     <Card className="bg-secondary text-white">
     <div>
-      <img
+      <Image
        
         alt="Legue Title"
         title="Legue Title 🏆 19회"
@@ -13,21 +13,21 @@ const Cup = () => {
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="European Cup"
         title="European Cup 🏆 6회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/european_cup.svg"
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="FA Cup"
         title="FA Cup 🏆 8회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/fa_cup.svg"
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="UEFA Cup"
         title="UEFA Cup 🏆 3회"
       
@@ -35,7 +35,7 @@ const Cup = () => {
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="League Cup"
         title="League Cup 🏆 9회"
         variant="top"
@@ -43,7 +43,7 @@ const Cup = () => {
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="UEFA Super Cup"
         title="UEFA Super Cup 🏆 4회"
        
@@ -51,7 +51,7 @@ const Cup = () => {
         data-nimg="responsive"
         style={{ width: "10rem" }}
       />
-      <img
+      <Image
         alt="FIFA Club World Cup"
         title="FIFA Club World Cup 🏆 1회"
         

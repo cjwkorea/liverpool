@@ -7,6 +7,9 @@ import Cup from "./Cup";
 import Log from "../commons/Log";
 import Top from "../commons/Top";
 import List from "./List";
+import img from "../assets/img/img.png"
+import tag1 from "../assets/img/tag1.PNG"
+import tag2 from "../assets/img/tag2.PNG"
 
 
 
@@ -17,7 +20,7 @@ const Main = () => {
       <Card className="bg-dark text-white">
         <Card.Img
           variant="top"
-          src="./img/img.png"
+          src={img}
           style={{ width: "10rem", margin: "auto" }}
         />
         <Card.Body>
@@ -30,12 +33,12 @@ const Main = () => {
       <Cup />
       <Card.Img
         variant="top"
-        src="./img/캡처1.PNG"
+        src={tag1}
         style={{ width: "120rem", margin: "auto" }}
       />
       <Card.Img
         variant="top"
-        src="./img/캡처2.PNG"
+        src={tag2}
         style={{ width: "120rem", margin: "auto" }}
       />
 

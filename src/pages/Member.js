@@ -1,10 +1,16 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import "../styles/App.css";
 import "../styles/Member.css";
 import Top from "../commons/Top";
+import Roberto from "../assets/img/1.jpg"
+import Salah from "../assets/img/2.jpg"
+import Diaz from "../assets/img/3.jpg"
+import Nunez from "../assets/img/4.jpg"
+import img from "../assets/img/img.png"
+
 const Member = () => {
   return (
     <div className="Member">
@@ -12,7 +18,7 @@ const Member = () => {
       <Card className="bg-dark text-white">
         <Card.Img
           variant="top"
-          src="./img/img.png"
+          src={img}
           style={{ width: "10rem", margin: "auto" }}
         />
         <Card.Body>
@@ -32,9 +38,9 @@ const Member = () => {
                 <div class="card">
                   <div class="card-body text-center">
                     <p>
-                      <img
+                      <Image
                         class=" img-fluid"
-                        src="img/1.jpg"
+                        src={Roberto}
                         alt="card image"
                       />
                     </p>
@@ -58,11 +64,11 @@ const Member = () => {
                     <p>국적: 브라질</p>
                     <p>키: 181cm/ 체중: 76kg</p>
                     <p>포지션: 중앙 공격수</p>
-                    <button>
+                    
                       <a href="https://namu.wiki/w/%ED%98%B8%EB%B2%A0%EB%A5%B4%ED%88%AC%20%ED%94%BC%EB%A5%B4%EB%AF%B8%EB%88%84">
                         📰
                       </a>
-                    </button>
+                   
 
                     <ul class="list-inline"></ul>
                   </div>
@@ -81,9 +87,9 @@ const Member = () => {
                 <div class="card">
                   <div class="card-body text-center">
                     <p>
-                      <img
+                      <Image
                         class=" img-fluid"
-                        src="img/2.jpg"
+                        src={Salah}
                         alt="card image"
                       />
                     </p>
@@ -106,11 +112,11 @@ const Member = () => {
                     <p>국적: 이집트</p>
                     <p>키: 175cm/ 체중: 71kg</p>
                     <p>포지션: 윙어, 중앙 공격수</p>
-                    <button>
+                   
                       <a href="https://namu.wiki/w/%EB%AA%A8%ED%95%98%EB%A9%94%EB%93%9C%20%EC%82%B4%EB%9D%BC">
                         📰{" "}
                       </a>
-                    </button>
+                    
                     <ul class="list-inline"></ul>
                   </div>
                 </div>
@@ -128,9 +134,9 @@ const Member = () => {
                 <div class="card">
                   <div class="card-body text-center">
                     <p>
-                      <img
+                      <Image
                         class=" img-fluid"
-                        src="img/3.jpg"
+                        src={Diaz}
                         alt="card image"
                       />
                     </p>
@@ -153,11 +159,11 @@ const Member = () => {
                     <p>국적: 콜롬비아</p>
                     <p>키: 180cm/ 체중: 73kg</p>
                     <p>포지션: 윙어</p>
-                    <button>
+                 
                       <a href="https://namu.wiki/w/%EB%A3%A8%EC%9D%B4%EC%8A%A4%20%EB%94%94%EC%95%84%EC%8A%A4">
                         📰
                       </a>
-                    </button>
+                  
                     <ul class="list-inline"></ul>
                   </div>
                 </div>
@@ -175,9 +181,9 @@ const Member = () => {
                 <div class="card">
                   <div class="card-body text-center">
                     <p>
-                      <img
+                      <Image
                         class=" img-fluid"
-                        src="img/images.jpg"
+                        src={Nunez}
                         alt="card image"
                       />
                     </p>
@@ -200,11 +206,11 @@ const Member = () => {
                     <p>국적: 우루과이</p>
                     <p>키: 187cm/ 체중: 81kg</p>
                     <p>포지션: 스트라이커, 윙어</p>
-                    <button>
+                 
                       <a href="https://namu.wiki/w/%EB%8B%A4%EB%A5%B4%EC%9C%88%20%EB%88%84%EB%85%9C%EC%8A%A4">
                         📰{" "}
                       </a>
-                    </button>
+                    
                     <ul class="list-inline"></ul>
                   </div>
                 </div>

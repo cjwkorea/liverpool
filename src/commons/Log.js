@@ -1,24 +1,30 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Image } from 'react-bootstrap'
+import Facebook from '../assets/img/facebook.svg'
+import Tiktok from '../assets/img/tictok.svg'
+import Instagram from '../assets/img/instagram.svg'
+import Twitter from '../assets/img/twitter.svg'
+import Youtube from '../assets/img/youtube.svg'
 
 const Log = () => {
   return (
     <Card>
     <div>
       <a href="https://www.facebook.com/LiverpoolFC">
-        <img src="./img/icons8-facebook-new.svg" title='facebook'></img>
+        <Image src={Facebook} title='facebook' />
       </a>
       <a href="https://www.tiktok.com/@liverpoolfc">
-        <img src="./img/icons8-tik의-톡.svg" title='tiktok'></img>
+        <Image src={Tiktok} title='tiktok' />
       </a>
       <a href="http://instagram.com/liverpoolfc/">
-        <img src="./img/icons8-인스-타-그램.svg" title='instagram'></img>
+        <Image src={Instagram} title='instagram' />
       </a>
       <a href="https://twitter.com/lfc">
-        <img src="./img/icons8-twitter-서클.svg" title='twitter'></img>
+       
+        <Image src={Twitter} title='twitter' />
       </a>
       <a href="http://www.youtube.com/liverpoolfc?sub_confirmation=1">
-        <img src="./img/icons8-유튜브-재생.svg" title='youtube'></img>
+        <Image src={Youtube} title='youtube' />
       </a>
     </div>
   </Card>

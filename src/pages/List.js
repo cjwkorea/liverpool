@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
+import noimg from "../assets/img/no-image.png"
 
 const List = () => {
   return (
@@ -7,7 +8,7 @@ const List = () => {
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col>
           <Card>
-            <Card.Img variant="top" src="./img/no-image.png" 
+            <Card.Img variant="top" src={noimg}
              style={{ width: "100%", margin: "auto" }}/>
             <Card.Body>
               <Card.Title>글</Card.Title>

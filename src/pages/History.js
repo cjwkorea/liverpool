@@ -1,10 +1,16 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/App.css";
 import Top from "../commons/Top";
+import First from "../assets/img/1976.jpg"
+import Second from "../assets/img/1977.jpg"
+import Third from "../assets/img/1980.jpg"
+import Fourth from "../assets/img/1983.jpg"
+import Fifth from "../assets/img/2004.jpg"
+import Sixth from "../assets/img/2018.jpg"
 
 const History = () => {
   return (
@@ -13,7 +19,7 @@ const History = () => {
 
       <Carousel fade>
         <Carousel.Item>
-          <img className="img" src="./img/1UxSoxd.jpg" alt="Second slide" />
+          <Image className="img" src={First} alt="Second slide" />
 
           <Carousel.Caption>
             <Card>
@@ -31,7 +37,7 @@ const History = () => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="img" src="./img/J8U0vXy.jpg" alt="Third slide" />
+          <Image className="img" src={Second} alt="Third slide" />
 
           <Carousel.Caption>
             <Card>
@@ -48,7 +54,7 @@ const History = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="img" src="./img/BXWXybb.jpg" alt="Third slide" />
+          <Image className="img" src={Third} alt="Third slide" />
 
           <Carousel.Caption>
             <Card>
@@ -65,9 +71,9 @@ const History = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <Image
             className="img"
-            src="./img/E8QbI2UXsAYIQoF.jpg"
+            src={Fourth}
             alt="Third slide"
           />
 
@@ -86,9 +92,9 @@ const History = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <Image
             className="img"
-            src="./img/9982CB425C74424D09.jpg"
+            src={Fifth}
             alt="Third slide"
           />
 
@@ -107,13 +113,13 @@ const History = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="img" src="./img/9gp34WA.jpg" alt="Third slide" />
+          <Image className="img" src={Sixth} alt="Third slide" />
 
           <Carousel.Caption>
             <Card>
               <Card.Body>
                 <h1 style={{ color: "#000000" }}>
-                  <strong> 여섯번 째 UEFA 컵 🏆 20018-2019 </strong>
+                  <strong> 여섯번 째 UEFA 컵 🏆 2018-2019 </strong>
                 </h1>
                 <h2 style={{ color: "#000000" }}>
                   6월 1일 토트넘을 상대로 2-0 승리를 거두어 여섯번 째 UEFA 컵
