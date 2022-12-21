@@ -1,15 +1,15 @@
-import React from "react";
-import { Card } from "react-bootstrap";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/App.css";
-import Cup from "./Cup";
+import React from "react";
+import { Card } from "react-bootstrap";
+import img from "../assets/img/img.png";
+import tag1 from "../assets/img/tag1.PNG";
+import tag2 from "../assets/img/tag2.PNG";
 import Log from "../commons/Log";
 import Top from "../commons/Top";
-import List from "./List";
-import img from "../assets/img/img.png"
-import tag1 from "../assets/img/tag1.PNG"
-import tag2 from "../assets/img/tag2.PNG"
+import "../styles/App.css";
+import Cup from "./Cup";
+import Posts from "./Posts";
 
 
 
@@ -29,7 +29,7 @@ const Main = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <List/>
+      <Posts/>
       <Cup />
       <Card.Img
         variant="top"

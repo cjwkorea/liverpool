@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Top= () => {
   const Navigate = useNavigate();
   return (
+    <div>
     <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
@@ -62,6 +63,7 @@ const Top= () => {
             
         </Container>
       </Navbar>
+      </div>
   )
 }
 
