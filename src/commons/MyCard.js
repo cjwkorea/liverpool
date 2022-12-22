@@ -1,21 +1,20 @@
 import React, { useMemo } from "react";
 import { Card, Col, Image, InputGroup, Row } from "react-bootstrap";
-import NoimageImg from "../assets/img/no-image.png";
+import Noimage from "../assets/img/no-image.png";
 import { useNavigate } from "react-router-dom";
 
 const MyCard = ({ post }) => {
   const navigate = useNavigate();
 
-  /** @type React.CSSProperties jaybonCardContainer */
-  const jaybonCardContainer = useMemo(() => {
+
+  const CardContainer = useMemo(() => {
     return {
       height: "150px",
       overflow: "hidden",
     };
   }, []);
 
-  /** @type React.CSSProperties jaybonCardImg */
-  const jaybonCardImg = useMemo(() => {
+  const CardImg = useMemo(() => {
     return {
       width: "100%",
       height: "100%",
@@ -24,21 +23,20 @@ const MyCard = ({ post }) => {
     };
   }, []);
 
-  /** @type React.CSSProperties jaybonCardText */
-  const jaybonCardText = useMemo(() => {
+  const CardText = useMemo(() => {
     return {
       display: "-webkit-box",
       wordWrap: "break-word",
-      WebkitLineClamp: 4,
+      WebkitLineClamp: 3,
       WebkitBoxOrient: "vertical",
       overflow: "hidden",
       textOverflow: "ellipsis",
-      height: "100px",
+      height: "70px",
     };
   }, []);
 
-  /** @type React.CSSProperties jaybonCardText */
-  const jaybonTitle = useMemo(() => {
+
+  const Title = useMemo(() => {
     return {
       cursor: "pointer",
       whiteSpace: "nowrap",
@@ -50,22 +48,22 @@ const MyCard = ({ post }) => {
   return (
     <Col>
       <Card className="m-3">
-        <div style={jaybonCardContainer}>
+        <div style={CardContainer}>
           <Card.Img
             variant="top"
-            src={post.thumbnail ? post.thumbnail : NoimageImg}
-            style={jaybonCardImg}
+            src={post.thumbnail ? post.thumbnail : Noimage}
+            style={CardImg}
             alt="..."
           />
         </div>
         <Card.Body>
           <Card.Title
             onClick={() => navigate(`/post/${post.idx}`)}
-            style={jaybonTitle}
+            style={Title}
           >👍
             {post.title}
           </Card.Title>
-          <Card.Text style={jaybonCardText}>{post.summary}</Card.Text>
+          <Card.Text style={CardText}>{post.summary}</Card.Text>
           <small className="text-muted">{post.createDate}</small>
         </Card.Body>
         <Card.Footer>

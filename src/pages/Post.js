@@ -2,8 +2,8 @@ import { Viewer } from "@toast-ui/react-editor";
 import { useEffect, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { useAuthStore } from "stores/RootStore";
-import { customAxios } from "utils/CustomAxios";
+import { useAuthStore } from "../RootStore";
+import { customAxios } from "../CustomAxios";
 
 const Post = () => {
   const [post, setPost] = useState(null);

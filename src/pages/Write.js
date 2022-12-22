@@ -1,13 +1,19 @@
 import "@toast-ui/editor/dist/toastui-editor.css";
 import { Editor } from "@toast-ui/react-editor";
+import ExitImg from "../assets/img/exit.svg";
+import CommonLayout from "../layouts/CommonLayout";
 import { useEffect, useRef, useState } from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Form, Image, Row } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import { customAxios } from "../utils/CustomAxios";
 import Top from "../commons/Top";
+
 const InsertPost = () => {
+  const navigate = useNavigate();
+
   const refs = useRef({
     title: null,
-    /** @type Editor editor */
+  
     editor: null,
   });
 
@@ -89,8 +95,40 @@ const InsertPost = () => {
       : null;
 
     // post 객체 생성
+    const post = {
+      title: titleElement.value,
+      thumbnail: thumbnail,
+      content: content,
+      summary: summary,
+    };
+
+    // post 객체를 서버로 전송
+    customAxios
+      .privateAxios({
+        method: `post`,
+        url: `/api/v1/posts`,
+        data: post,
+      })
+      .then((response) => {
+        if (response.status === 201) {
+          alert("저장되었습니다.");
+          navigate(`/post/${response.data.content.idx}`);
+        } else {
+          alert(response.data.message);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        if (error?.response?.data?.detail != null) {
+          alert(JSON.stringify(error.response.data.detail));
+        } else if (error?.response?.data?.message != null) {
+          alert(error.response.data.message);
+        } else {
+          alert("오류가 발생했습니다. 관리자에게 문의하세요.");
+        }
+      })
+      .finally(() => {});
   };
-  // post 객체를 서버로 전송
 
   useEffect(() => {
     refs.current.editor.getInstance().setMarkdown("");
@@ -101,11 +139,13 @@ const InsertPost = () => {
     tempPostCheck();
   }, []);
 
+
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div>
       <div>
-        <Top />
-      </div>
+      <Top/>
+    </div>
+    <CommonLayout>
       <Row>
         <Col>
           <Form.Control
@@ -125,6 +165,7 @@ const InsertPost = () => {
       <Row className="row fixed-bottom p-3 bg-white shadow-lg">
         <Col className="me-auto">
           <Link to={-1} className="text-decoration-none text-dark">
+            <Image src={ExitImg} />
             <span className="m-2">나가기</span>
           </Link>
         </Col>
@@ -148,6 +189,7 @@ const InsertPost = () => {
           </Button>
         </Col>
       </Row>
+    </CommonLayout>
     </div>
   );
 };

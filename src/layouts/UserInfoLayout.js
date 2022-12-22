@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap";
 
 
-const UserInfoLayout = ({ children,}) => {
+const UserInfoLayout = ({ children}) => {
   return (
     <section style={{ backgroundColor: "#508bfc", minHeight: "100vh" }}>
       <Container className="py-5 h-100">
