@@ -7,6 +7,7 @@ import Login from "./Log/Login";
 import Register from "./Log/Register";
 import Write from "./pages/Write";
 import { StoreProvider } from "./stores/RootStore";
+import Post from "./pages/Post";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<Main />} />
+        <Route path="/post/:postIdx" element={<Post />} />
         <Route path={"/Member"} element={<Member />} />
         <Route path={"/History"} element={<History />} />
         <Route path={"/Login"} element={<Login />} />

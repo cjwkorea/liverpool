@@ -2,8 +2,9 @@ import { Viewer } from "@toast-ui/react-editor";
 import { useEffect, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { useAuthStore } from "../RootStore";
-import { customAxios } from "../CustomAxios";
+import Top from "../commons/Top";
+import { useAuthStore } from "../stores/RootStore";
+import { customAxios } from "../utils/CustomAxios";
 
 const Post = () => {
   const [post, setPost] = useState(null);
@@ -40,6 +41,8 @@ const Post = () => {
   }, []);
 
   return (
+    <div className="bg-white">
+    <Top />
       <Container className="ps-5 pe-5 my-5">
         <h1>제목</h1>
         <div className="d-flex justify-content-between align-items-center">
@@ -77,6 +80,7 @@ const Post = () => {
         </div>
         {post ? <Viewer initialValue={post.content} /> : null}
       </Container>
+      </div>
   );
 };
 
