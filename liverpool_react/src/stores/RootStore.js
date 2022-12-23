@@ -1,6 +1,5 @@
 import { createContext, useContext } from "react";
-import AuthStore from "./AuthStore";
-
+import AuthStore from "../stores/AuthStore";
 
 const StoreContext = createContext();
 
@@ -11,7 +10,7 @@ export const StoreProvider = ({children}) => {
         authStore: AuthStore(),
       }}
     >
-       {children}
+      {children}
     </StoreContext.Provider>
   );
 };

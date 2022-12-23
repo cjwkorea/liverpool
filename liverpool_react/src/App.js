@@ -6,10 +6,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Log/Login";
 import Register from "./Log/Register";
 import Write from "./pages/Write";
-
+import { StoreProvider } from "./stores/RootStore";
 
 const App = () => {
   return (
+    <StoreProvider>
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<Main />} />
@@ -22,6 +23,7 @@ const App = () => {
 
       </Routes>
     </BrowserRouter>
+    </StoreProvider>
   );
 };
 
