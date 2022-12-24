@@ -8,7 +8,7 @@ import Youtube from '../assets/img/youtube.svg'
 
 const Log = () => {
   return (
-    <Card>
+    <Card style={{textAlign:"center"}}>
     <div>
       <a href="https://www.facebook.com/LiverpoolFC">
         <Image src={Facebook} title='facebook' />

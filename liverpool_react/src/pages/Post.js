@@ -1,10 +1,14 @@
 import { Viewer } from "@toast-ui/react-editor";
 import { useEffect, useState } from "react";
-import { Button, Container, Image } from "react-bootstrap";
+import { Button, Card, Container, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import Log from "../commons/Log";
 import Top from "../commons/Top";
 import { useAuthStore } from "../stores/RootStore";
 import { customAxios } from "../utils/CustomAxios";
+import tag1 from "../assets/img/tag1.PNG";
+import tag2 from "../assets/img/tag2.PNG";
+import img from "../assets/img/img.png";
 
 const Post = () => {
   const [post, setPost] = useState(null);
@@ -49,7 +53,7 @@ const Post = () => {
           <div>
             <span>
               <Image
-                src={post?.writer.profileImage}
+                src={img}
                 className="ratio ratio-1x1 rounded-circle me-2"
                 style={{ width: "20px", height: "20px" }}
                 alt="profile"
@@ -80,6 +84,17 @@ const Post = () => {
         </div>
         {post ? <Viewer initialValue={post.content} /> : null}
       </Container>
+      <Card.Img
+        variant="top"
+        src={tag1}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+      <Card.Img
+        variant="top"
+        src={tag2}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+      <Log />
       </div>
   );
 };

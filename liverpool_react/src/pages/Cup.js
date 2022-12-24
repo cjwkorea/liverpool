@@ -6,26 +6,27 @@ const Cup = () => {
     <Card className="bg-secondary text-white">
     <div>
       <Image
-       
         alt="Legue Title"
         title="Legue Title 🏆 19회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/league_title.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
-      />
+        style={{ width: "10rem", cursor:"wait" }}
+      /> &nbsp;  &nbsp;  &nbsp;
+       
       <Image
         alt="European Cup"
         title="European Cup 🏆 6회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/european_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait" }}
       />
+      
       <Image
         alt="FA Cup"
         title="FA Cup 🏆 8회"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/fa_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait"  }}
       />
       <Image
         alt="UEFA Cup"
@@ -33,7 +34,7 @@ const Cup = () => {
       
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/uefa_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait"  }}
       />
       <Image
         alt="League Cup"
@@ -41,7 +42,7 @@ const Cup = () => {
         variant="top"
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/league_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait"  }}
       />
       <Image
         alt="UEFA Super Cup"
@@ -49,7 +50,7 @@ const Cup = () => {
        
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/uefa_super_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait"  }}
       />
       <Image
         alt="FIFA Club World Cup"
@@ -57,7 +58,7 @@ const Cup = () => {
         
         src="https://lfcdxp.prod.acquia-sites.com/sites/default/files/2022-05/fifa_club_world_cup.svg"
         data-nimg="responsive"
-        style={{ width: "10rem" }}
+        style={{ width: "10rem", cursor:"wait"  }}
       />
     </div>
   </Card>

@@ -8,6 +8,7 @@ import Register from "./Log/Register";
 import Write from "./pages/Write";
 import { StoreProvider } from "./stores/RootStore";
 import Post from "./pages/Post";
+import UpdatePost from "./pages/UpdatePost";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path={"/Login"} element={<Login />} />
         <Route path={"/Register"} element={<Register />} />
         <Route path={"/Write"} element={<Write />} />
+        <Route path={"/Update"} element={<UpdatePost />} />
         
 
       </Routes>

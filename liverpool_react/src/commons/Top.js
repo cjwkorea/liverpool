@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Button, Container, Dropdown, Form, Image, InputGroup, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
+import { Anchor, Button, Container, Dropdown, Form, Image, InputGroup, Modal, Nav, Navbar, NavDropdown, Offcanvas, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import img from "../assets/img/img.png";
 import { useAuthStore } from '../stores/RootStore';
@@ -18,6 +18,7 @@ const Top= () => {
             onClick={() => Navigate("/")}>LFC</h1>
           </Navbar.Brand>
           <Nav className="me-auto">
+         
             <Button
               className="rounded-pill"
               style={{backgroundColor:"#007B5E"}}
@@ -27,6 +28,7 @@ const Top= () => {
             >
               Home
             </Button>
+            &nbsp;
             <Button
               className="rounded-pill"
               style={{backgroundColor:"#007B5E"}}
@@ -34,6 +36,7 @@ const Top= () => {
             >
               Member
             </Button>
+            &nbsp;
             <Button
               className="rounded-pill"
               style={{backgroundColor:"#007B5E"}}
@@ -41,7 +44,7 @@ const Top= () => {
             >
               History
             </Button>
-          
+           
           </Nav>
             <div>
             <InputGroup>
@@ -74,6 +77,7 @@ const Top= () => {
                           <Image src={img} width={"20"} />
                         </Button>
                       </Form>
+                    
                     </div>
                     <Dropdown.Divider className="d-md-none" />
                     <Anchor
@@ -90,6 +94,7 @@ const Top= () => {
                 ) : (
                   ""
                 )}
+                  
               </Row>
             </InputGroup>
           </div>

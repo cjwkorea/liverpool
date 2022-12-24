@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { Card, Col, Image, InputGroup, Row } from "react-bootstrap";
 import Noimage from "../assets/img/no-image.png";
 import { useNavigate } from "react-router-dom";
+import img from "../assets/img/img.png";
 
 const MyCard = ({ post }) => {
   const navigate = useNavigate();
@@ -60,7 +61,7 @@ const MyCard = ({ post }) => {
           <Card.Title
             onClick={() => navigate(`/post/${post.idx}`)}
             style={Title}
-          >👍
+          >
             {post.title}
           </Card.Title>
           <Card.Text style={CardText}>{post.summary}</Card.Text>
@@ -71,7 +72,7 @@ const MyCard = ({ post }) => {
             <Col>
               <InputGroup>
                 <Image
-                  src={post.writer.profileImage}
+                  src={img}
                   alt="profile"
                   className="ratio ratio-1x1 rounded-circle me-2"
                   style={{ width: "24px", height: "24px" }}
