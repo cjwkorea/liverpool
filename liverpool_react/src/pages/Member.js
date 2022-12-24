@@ -10,6 +10,9 @@ import Salah from "../assets/img/2.jpg"
 import Diaz from "../assets/img/3.jpg"
 import Nunez from "../assets/img/4.jpg"
 import img from "../assets/img/img.png"
+import tag1 from "../assets/img/tag1.PNG";
+import tag2 from "../assets/img/tag2.PNG";
+import Log from "../commons/Log";
 
 const Member = () => {
   return (
@@ -219,6 +222,19 @@ const Member = () => {
           </div>
         </div>
       </div>
+      <br/>
+      <Card.Img
+        variant="top"
+        src={tag1}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+      <Card.Img
+        variant="top"
+        src={tag2}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+
+      <Log />
     </div>
   );
 };

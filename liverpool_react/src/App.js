@@ -1,14 +1,14 @@
-import Member from "./pages/Member";
-import Main from "./pages/Main";
-import History from "./pages/History";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Log/Login";
 import Register from "./Log/Register";
-import Write from "./pages/Write";
-import { StoreProvider } from "./stores/RootStore";
+import History from "./pages/History";
+import Main from "./pages/Main";
+import Member from "./pages/Member";
 import Post from "./pages/Post";
 import UpdatePost from "./pages/UpdatePost";
+import Write from "./pages/Write";
+import { StoreProvider } from "./stores/RootStore";
 
 const App = () => {
   return (

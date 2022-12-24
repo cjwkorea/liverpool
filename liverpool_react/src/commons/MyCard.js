@@ -52,7 +52,7 @@ const MyCard = ({ post }) => {
         <div style={CardContainer}>
           <Card.Img
             variant="top"
-            src={post.thumbnail ? post.thumbnail : Noimage}
+            src={post.thumbnail ? post.thumbnail : img}
             style={CardImg}
             alt="..."
           />

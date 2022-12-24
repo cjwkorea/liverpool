@@ -11,6 +11,9 @@ import Third from "../assets/img/1980.jpg"
 import Fourth from "../assets/img/1983.jpg"
 import Fifth from "../assets/img/2004.jpg"
 import Sixth from "../assets/img/2018.jpg"
+import tag1 from "../assets/img/tag1.PNG";
+import tag2 from "../assets/img/tag2.PNG";
+import Log from "../commons/Log";
 
 const History = () => {
   return (
@@ -130,6 +133,18 @@ const History = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <Card.Img
+        variant="top"
+        src={tag1}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+      <Card.Img
+        variant="top"
+        src={tag2}
+        style={{ width: "120rem", margin: "auto" }}
+      />
+
+      <Log />
     </div>
   );
 };

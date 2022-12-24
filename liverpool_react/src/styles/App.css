@@ -54,7 +54,7 @@ div{
   }
 }
 body{
-  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72886-Anfield-Road-Stadium.jpg");
+  background-image: url('/src/assets/img/bg.jpg');
 }
 
 .App-header {

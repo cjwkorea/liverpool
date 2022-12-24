@@ -25,7 +25,6 @@ const InsertPost = () => {
       title: refs.current.title.value,
       content: refs.current.editor.getInstance().getMarkdown(),
     };
-
     localStorage.setItem("tempPost", JSON.stringify(tempPost));
     alert("임시저장되었습니다.");
   };

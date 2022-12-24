@@ -34,9 +34,7 @@ div{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-body{
-  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72886-Anfield-Road-Stadium.jpg");
-}
+
 
 .App-header {
   background-color: #282c34;
